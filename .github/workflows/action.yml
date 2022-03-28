@@ -30,10 +30,6 @@ jobs:
           mv mouliVD .mouliVD
           mv id .id
           mv moulitek .moulitek
-      - name : use abricot
-        if: always()
-        run: |
-          python3 brico.py -json > brico.val
       - name: UnHide file before norm
         if: always()
         run : |
